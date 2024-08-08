@@ -18,6 +18,7 @@ class PageButton(discord.ui.Button):
       label = '◀' if arrow_type == 1 else '▶'
       disabled = False
       if (page_data[2] == 0 and arrow_type == 1) or (page_data[2] == page_data[1] and arrow_type == 0):
+        style = discord.ButtonStyle.grey
         disabled = True
       else:
         style = discord.ButtonStyle.green
