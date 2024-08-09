@@ -101,4 +101,4 @@ async def asdf(interaction, choices: app_commands.Choice[int]):
 
 
 client.setup_hook = setup_hook
-client.run(TOKEN)
+client.run(TOKENs)
